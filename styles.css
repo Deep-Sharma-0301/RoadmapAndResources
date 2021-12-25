@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER SECTION */
+
+header
+{
+    min-height: 70vh;
+}
+header::before
+{
+    content: " ";
+    background: linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7) ), url('img/banner.png');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+} 
+#nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+}
+#nav #logo
+{
+    margin-left: 70px;
+}
+#nav-list
+{
+    margin-right: 70px;
+    margin-top: 20px;
+}
+#nav-list li
+{
+    display: inline-block;
+    margin: 2px 10px;
+    color: white;
+}
+#nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+#nav-list li:hover
+{
+    color: rgb(177, 200, 243);
+    box-shadow: 0px 0px 5px 1px white;
+    border-radius: 15px;
+}
+#header-text
+{
+    color: white;
+    text-align: center;
+    margin-top: 130px;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+.button
+{
+    background-color: #fc3f3f;
+    width: 150px;
+    height: 50px;
+    opacity: 0.89;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.button:hover
+{
+    background-color: #f55858;
+    box-shadow: 0px 0px 5px 5px #ee6464;
+}
+
+/* ROADMAP SECTION */
+
+#ROADMAP
+{
+    position: relative ;
+    padding-bottom: 30px;
+    height: 50vh;
+}
+#ROADMAP::before
+{
+    content: " ";
+    /* background: url('img/prog.jpeg'); */
+    background-color: f2f2f2;
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.1;
+}
+#ROADMAP>h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+.roles
+{
+    display: flex;
+    justify-content: space-around;
+}
+.abc
+{
+    margin-top: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.733);
+    width: 30vw;
+    min-height: auto;
+    background-color: rgb(255, 243, 243);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #a1a1a1;
+}
+.abch1
+{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.abcul
+{
+    margin-bottom: 10px;
+}
+.abcUlLi
+{
+    margin-left: 25px;
+    line-height: 25px;
+    font-size: 16px;
+}
+.abcUlLia
+{
+    text-decoration: none;
+}
+#DSA
+{
+    height: 70vh;
+    position: relative;
+    /* margin: 30px; */
+
+}
+
+/* DSA SECTION */
+
+#DSA::before
+{
+    content: "";
+    background: url('img/05_alfo.png');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    opacity: 0.035;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#DSA>h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* GENEREAL CLASSES FOR FREE AND PAID RESOURCES COLUMNS */
+
+.Resources
+{
+    display: flex;
+    justify-content: space-around;
+}
+.free
+{
+    margin-top: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.733);
+    width: 30vw;
+    min-height: 33vh;
+    background-color: rgb(255, 243, 243);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #a1a1a1;
+}
+.free>h1
+{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.free ul
+{
+    margin-bottom: 10px;
+}
+.free ul li{
+    margin-left: 25px;
+    line-height: 25px;
+    font-size: 16px;
+}
+.free ul li a{
+    text-decoration: none;
+}
+.paid
+{
+    margin-top: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.733);
+    width: 30vw;
+    min-height: 33vh;
+    background-color: rgb(255, 243, 243);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #a1a1a1;
+}
+.paid>h1{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.paid ul
+{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.paid ul li{
+    margin-left: 25px;
+    line-height: 25px;
+    font-size: 16px;
+}
+.paid ul li a{
+    text-decoration: none;
+}
+
+/* WEB-DEV SECTION */
+
+#WEB
+{
+    height: 70vh;
+    position: relative;
+}
+#WEB::before
+{
+    content: "";
+    background: url('img/pexels-miguel-á-padriñán-1591060.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    opacity: 0.09;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#WEB>h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* CORE SUBJECT SECTION */
+
+#CORE>h1
+{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.subjects
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.OS,.DBMS,.OOPS,.CN
+{
+    margin-top: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.733);
+    width: 40vw;
+    height: 188px;
+    background-color: rgb(255, 243, 243);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #a1a1a1;
+}
+.xyzH2
+{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.xyzUl
+{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* xyz class is to align the list items of all the core subjects properly */
+.xyz  
+{
+    margin-left: 40px;
+    line-height: 25px;
+    font-size: 16px;
+}
+.xyzAnchor{
+    text-decoration: none;
+}
+
+/* ABOUT SECTION */
+
+#ABOUT
+{
+    padding-top: 100px;
+    height: 30vh;
+    background-color: #fff2f367; 
+
+} 
+#ABOUT>h1
+{
+    margin-top: -70px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+.about-text
+{
+    
+    line-height: 25px;
+    padding: 50px 150px;
+}
+.about-text h2{
+    font-weight: 900;
+}
+.about-text p{
+    padding-top: 20px;
+    font-size: larger
+}
+
+/* CONTACT US FORM */
+#contact-container
+{
+    line-height: 35px;
+    height: 600px;
+    position: relative;
+}
+#contact-container::before
+{
+    content: "";
+    background: url(img/contact1.jpeg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact-container h1
+{
+    padding-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+#contact-form
+{
+    margin-top: -35px;
+    display: grid;
+    grid-template-columns: 581px;
+    grid-template-rows: repeat(3,69px) 250px;
+    justify-content: center;
+}
+#contact-form label
+{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 900;
+}
+#contact-form input
+{
+    width: 500px;
+    height: 30px;
+    border: 2px solid black;
+    border-bottom: 2px solid #a1a1a1;
+    border-right: 2px solid #a1a1a1;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#contact-form textarea
+{
+    width: 85%;
+    border-radius: 5px;
+}
+
+/* footer */
+
+#footer
+{
+    height: 35px;
+    margin: -19px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
